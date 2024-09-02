@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./Styles/survey.css">
+<title>Feedback Form</title>
+</head>
+<body>
+
+<div class="container">
+ <img src="./Assets/ibm_logo.png" alt="logo" class="logo">
+  <p class="message">You successfully logged your time. Your time sheet has been updated.</p>
+  <p class="message">Please tell us how was your experience with the current version?</p>
+  <div class="feedback-emojis">
+    <button id="emoji1" class="emoji-button" onclick="selectEmoji('emoji1')">😍</button>
+    <button id="emoji2" class="emoji-button" onclick="selectEmoji('emoji2')">😐</button>
+    <button id="emoji3" class="emoji-button" onclick="selectEmoji('emoji3')">😞</button>
+  </div>
+  <input type="text" placeholder="Please provide any additional feedback">
+  <button class="submit-button" onclick="location.href='feedbackform.html'">SUBMIT</button>
+</div>
+
+<script src="Functions/survey.js"></script>
+</body>
+</html>
+

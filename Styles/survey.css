@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #183063;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .container {
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+  }
+ 
+  .message {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .feedback-emojis {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  input[type="text"] {
+    width: calc(100% - 0px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+  }
+  .submit-button {
+    background-color: #1F70C1;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .emoji-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .emoji-button.selected {
+    border-bottom: 2px solid #183063;
+  }
+
+  .logo {
+    display: block;
+    margin: 0 auto 20px; 
+    max-width: 80%; 
+    height: auto; 
+    margin-bottom: 30px;
+}

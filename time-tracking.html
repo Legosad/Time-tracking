@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time tracking</title>
+    <link rel="stylesheet" type="text/css" href="./Styles/time-tracking.css">
+    <link rel="stylesheet" type="text/css" href="./Styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="./Styles/tracking-2.css">
+</head>
+
+<body>
+    <button class="go-back-tracking d-none" onclick="location.href='survey.html'">Go back</button>
+    <!-- Main screen to log time add display flex/block div -->
+    <div class="d-flex">
+        <div class="filler-text">
+            <div class="filler-text-container">
+                <h1>You haven't logged your time today!</h1>
+                <img height="250px" src="./Assets/clock.svg">
+                <h1>Tick, tock!</h1>
+                <h2>Remember to enter your hours!</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tracker and logged details add display none div -->
+    <div class="d-flex">
+        <div class="tracker-container d-none">
+            <div class="tracker-header">
+                <div>Today</div>
+                <div id="clock" class="font-20">00:00:00</div>
+            </div>
+            <div class="tracker-details">
+                <div>
+                    <div>Time worked on projects</div>
+                </div>
+                <div id="savedTimes"></div>
+            </div>
+        </div>
+    </div>
+    <!-- bottom bar -->
+    <div class="bottom-bar">
+        <div class="bottom-bar-menu">
+            <div class="ugh d-none">hello</div>
+
+            <div class="box-one">
+                <div class="d-flex">
+                    <div class="main-switch-container">
+                        <img class="entry-switch-btn" src="./Assets/arrow-icon.svg">
+                        <div>Switch time entry mode</div>
+                    </div>
+                </div>
+                <!-- Timer/manual switch -->
+                <div class="d-none">
+                    <div class="entry-switch-container">
+                        <div class="timer-input-container">
+
+                            <label for="timerRadio">
+                                <input type="radio" id="timerRadio">
+                                Timer
+                            </label>
+                        </div>
+                        <div class="manual-input-container">
+                            <label id="module" for="manualRadio">
+                                <input type="radio" id="manualRadio">
+                                Manual
+                            </label>
+                        </div>
+                        <img src="./Assets/arrow-icon-left.svg" class="arrow-icon-left"> <!-- Added class here -->
+                    </div>
+                </div>
+            </div>
+            <div class="box-two">
+                <div class="placeholder-btns">
+                    <!-- switch buttons around and create display flex + two display none divs -->
+
+
+                    <div class="d-flex">
+                        <img class="plus-circle" src="./Assets/plus-circle.svg">
+                    </div>
+                    <!-- Resume button switch -->
+                    <!-- <div id="startButton" class="d-none">
+                        <img class="resume-btn" src="./Assets/resume-btn.svg">
+                    </div> -->
+                    <button id="startButton" class="d-none">
+                        <img class="resume-btn" src="./Assets/resume-btn.svg">
+                    </button>
+                    <!-- Stop button switch -->
+                    <!-- <div class="d-none">
+                        <img class="stop-btn" src="./Assets/stop-btn.svg">
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+        <div id="feedbackModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+
+                <form class="container" id="feedbackFrame">
+
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" name="date" min="2024-02-01" max="2024-02-07" required>
+                    </div>
+
+                    <div class="form-group time-project-group">
+                        <div class="time-container">
+                            <label for="time">
+                                Project
+                            </label>
+                            <input type="text" name="name" placeholder="Project name" required>
+                            <input type="text" name="time" placeholder="00:00:00" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea name="desc" form="feedbackFrame" placeholder="What have you worked on?"></textarea>
+                    </div>
+                    <button type="submit" class="submit-button" >Submit</button>
+                </form>
+
+            </div>
+        </div>
+
+        <script src="./Functions/script3.js"></script>
+        <script src="./Functions/time-tracking.js"></script>
+</body>
+
+</html>

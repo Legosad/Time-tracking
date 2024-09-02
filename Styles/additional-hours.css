@@ -1,0 +1,56 @@
+.filler-text {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: rgb(10, 20, 54)
+}
+
+.welcome-bubble {
+    position: relative;
+    background: rgb(255, 255, 255);
+    border-radius: 12px;
+    width: 100%;
+    color: rgb(46, 64, 122);
+    padding: 16px 24px;
+}
+
+.welcome-bubble:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 75px;
+    right: 0;
+    bottom: -70px;
+    border: 40px solid;
+    border-color: white white transparent transparent;
+    border-radius: 8px;
+}
+
+.bubble-btn-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.bubble-btn {
+    background-color: #0a1436;
+    border-radius: 24px;
+    border-style: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    outline: none;
+    transition: color 100ms;
+    padding: 6px 24px;
+}
+
+.bottom-bar {
+    pointer-events: none;
+    filter: brightness(65%);
+}

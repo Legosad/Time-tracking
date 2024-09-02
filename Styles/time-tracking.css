@@ -1,0 +1,78 @@
+.filler-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    flex-direction: column;
+    color: rgb(10, 21, 56);
+    height: 100vh;
+}
+
+.filler-text-container img {
+    filter: brightness(60%);
+    opacity: 0.6;
+}
+
+.manual-input-container {
+    padding:0 8px;
+}
+
+.tracker-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    color: rgb(255, 255, 255);
+    width:100%
+}
+
+.tracker-header,
+.tracker-details {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 18px;  /* Increased padding for more spacing */
+    display: flex;
+    justify-content: space-between;  /* Adjusted to space between */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.tracker-header {
+    background-color: #15274F;
+}
+
+.tracker-details {
+    background-color: #203664;
+}
+
+.tracker-details > div {
+    margin-right: 8px;  
+}
+
+.tracker-details span.font-20 {
+    margin-left: 8px;  
+}
+
+.d-flex {
+    display: flex;
+}
+
+.main-switch-container {
+    display:flex;
+    align-items: center;
+}
+
+.d-none {
+    display: none;
+}
+
+.entry-switch-container {
+    display:flex;
+    align-items: center;
+}
+
+
+
